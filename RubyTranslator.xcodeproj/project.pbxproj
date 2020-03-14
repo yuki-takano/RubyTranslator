@@ -7,39 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A099F51241CD00E001459A3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4B241CD00D001459A3 /* RxSwift.framework */; };
-		5A099F52241CD00E001459A3 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4B241CD00D001459A3 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A099F53241CD00E001459A3 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4C241CD00D001459A3 /* SVProgressHUD.framework */; };
-		5A099F54241CD00E001459A3 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4C241CD00D001459A3 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A099F55241CD00E001459A3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4D241CD00D001459A3 /* Alamofire.framework */; };
-		5A099F56241CD00E001459A3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4D241CD00D001459A3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A099F57241CD00E001459A3 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4E241CD00D001459A3 /* RxRelay.framework */; };
-		5A099F58241CD00E001459A3 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4E241CD00D001459A3 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A099F59241CD00E001459A3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4F241CD00E001459A3 /* RxBlocking.framework */; };
-		5A099F5A241CD00E001459A3 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F4F241CD00E001459A3 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A099F5B241CD00E001459A3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F50241CD00E001459A3 /* RxCocoa.framework */; };
-		5A099F5C241CD00E001459A3 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A099F50241CD00E001459A3 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC21241CC59400AE1493 /* AppDelegate.swift */; };
 		5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */; };
 		5AC8DC26241CC59400AE1493 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC25241CC59400AE1493 /* InputViewController.swift */; };
 		5AC8DC29241CC59400AE1493 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC27241CC59400AE1493 /* Input.storyboard */; };
 		5AC8DC2B241CC59500AE1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2A241CC59500AE1493 /* Assets.xcassets */; };
 		5AC8DC2E241CC59500AE1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */; };
+		6BE1F7ABC17D594575E6B2CA /* Pods_RubyTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB08D799CAE8B283A1B95A36 /* Pods_RubyTranslator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5A099F5D241CD00E001459A3 /* Embed Frameworks */ = {
+		5A6B48FC241CE9C10045C690 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5A099F5C241CD00E001459A3 /* RxCocoa.framework in Embed Frameworks */,
-				5A099F58241CD00E001459A3 /* RxRelay.framework in Embed Frameworks */,
-				5A099F5A241CD00E001459A3 /* RxBlocking.framework in Embed Frameworks */,
-				5A099F54241CD00E001459A3 /* SVProgressHUD.framework in Embed Frameworks */,
-				5A099F56241CD00E001459A3 /* Alamofire.framework in Embed Frameworks */,
-				5A099F52241CD00E001459A3 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,12 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A099F4B241CD00D001459A3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		5A099F4C241CD00D001459A3 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
-		5A099F4D241CD00D001459A3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		5A099F4E241CD00D001459A3 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
-		5A099F4F241CD00E001459A3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		5A099F50241CD00E001459A3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.debug.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.release.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.release.xcconfig"; sourceTree = "<group>"; };
 		5AC8DC1E241CC59400AE1493 /* RubyTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC8DC21241CC59400AE1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +40,7 @@
 		5AC8DC2A241CC59500AE1493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC8DC2D241CC59500AE1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC8DC2F241CC59500AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB08D799CAE8B283A1B95A36 /* Pods_RubyTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubyTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A099F5B241CD00E001459A3 /* RxCocoa.framework in Frameworks */,
-				5A099F57241CD00E001459A3 /* RxRelay.framework in Frameworks */,
-				5A099F59241CD00E001459A3 /* RxBlocking.framework in Frameworks */,
-				5A099F53241CD00E001459A3 /* SVProgressHUD.framework in Frameworks */,
-				5A099F55241CD00E001459A3 /* Alamofire.framework in Frameworks */,
-				5A099F51241CD00E001459A3 /* RxSwift.framework in Frameworks */,
+				6BE1F7ABC17D594575E6B2CA /* Pods_RubyTranslator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +58,7 @@
 		5A099F4A241CD00D001459A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A099F4D241CD00D001459A3 /* Alamofire.framework */,
-				5A099F4F241CD00E001459A3 /* RxBlocking.framework */,
-				5A099F50241CD00E001459A3 /* RxCocoa.framework */,
-				5A099F4E241CD00D001459A3 /* RxRelay.framework */,
-				5A099F4B241CD00D001459A3 /* RxSwift.framework */,
-				5A099F4C241CD00D001459A3 /* SVProgressHUD.framework */,
+				FB08D799CAE8B283A1B95A36 /* Pods_RubyTranslator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +69,7 @@
 				5AC8DC20241CC59400AE1493 /* RubyTranslator */,
 				5AC8DC1F241CC59400AE1493 /* Products */,
 				5A099F4A241CD00D001459A3 /* Frameworks */,
+				7ACCD50D28DB01EA104321BB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +95,16 @@
 			path = RubyTranslator;
 			sourceTree = "<group>";
 		};
+		7ACCD50D28DB01EA104321BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */,
+				550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,11 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AC8DC32241CC59500AE1493 /* Build configuration list for PBXNativeTarget "RubyTranslator" */;
 			buildPhases = (
+				05F1578743C94410426F9094 /* [CP] Check Pods Manifest.lock */,
 				5AC8DC1A241CC59400AE1493 /* Sources */,
 				5AC8DC1B241CC59400AE1493 /* Frameworks */,
 				5AC8DC1C241CC59400AE1493 /* Resources */,
-				5A099F5D241CD00E001459A3 /* Embed Frameworks */,
-				5A099F5E241CD060001459A3 /* Carthage */,
+				5A6B48FC241CE9C10045C690 /* Embed Frameworks */,
+				62C3BFACBB05DD87FA8D3809 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +175,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5A099F5E241CD060001459A3 /* Carthage */ = {
+		05F1578743C94410426F9094 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,21 +183,36 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = Carthage;
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RubyTranslator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/usr/local/bin/carthage copy-frameworks";
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C3BFACBB05DD87FA8D3809 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -368,6 +365,7 @@
 		};
 		5AC8DC33241CC59500AE1493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +387,7 @@
 		};
 		5AC8DC34241CC59500AE1493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

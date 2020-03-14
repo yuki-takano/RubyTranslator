@@ -1,3 +1,0 @@
-github "SVProgressHUD/SVProgressHUD"
-github "ReactiveX/RxSwift" ~> 5.0
-github "Alamofire/Alamofire"
