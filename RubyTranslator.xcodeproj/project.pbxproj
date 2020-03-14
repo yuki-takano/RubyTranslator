@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A410C2C241D478A004FF794 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				5AC8DC25241CC59400AE1493 /* InputViewController.swift */,
+				5AC8DC27241CC59400AE1493 /* Input.storyboard */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
 		5AC8DC15241CC59400AE1493 = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +95,7 @@
 			children = (
 				5AC8DC21241CC59400AE1493 /* AppDelegate.swift */,
 				5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */,
-				5AC8DC25241CC59400AE1493 /* InputViewController.swift */,
-				5AC8DC27241CC59400AE1493 /* Input.storyboard */,
+				5A410C2C241D478A004FF794 /* InputView */,
 				5AC8DC2A241CC59500AE1493 /* Assets.xcassets */,
 				5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */,
 				5AC8DC2F241CC59500AE1493 /* Info.plist */,
@@ -101,7 +109,6 @@
 				3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */,
 				550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
