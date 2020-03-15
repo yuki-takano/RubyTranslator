@@ -13,6 +13,12 @@
 		5AC8DC29241CC59400AE1493 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC27241CC59400AE1493 /* Input.storyboard */; };
 		5AC8DC2B241CC59500AE1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2A241CC59500AE1493 /* Assets.xcassets */; };
 		5AC8DC2E241CC59500AE1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */; };
+		5AFD66DC241E1D3000E1E2AF /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66DB241E1D3000E1E2AF /* InputViewModel.swift */; };
+		5AFD66DF241E20F600E1E2AF /* InputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66DE241E20F600E1E2AF /* InputModel.swift */; };
+		5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66E0241E210100E1E2AF /* OutputModel.swift */; };
+		5AFD66E4241E232C00E1E2AF /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66E3241E232C00E1E2AF /* APIResponse.swift */; };
+		5AFD66E6241E25D000E1E2AF /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66E5241E25D000E1E2AF /* APIErrorModel.swift */; };
+		5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66E8241E30E000E1E2AF /* HUD.swift */; };
 		6BE1F7ABC17D594575E6B2CA /* Pods_RubyTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB08D799CAE8B283A1B95A36 /* Pods_RubyTranslator.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		5AC8DC2A241CC59500AE1493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC8DC2D241CC59500AE1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC8DC2F241CC59500AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD66DB241E1D3000E1E2AF /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		5AFD66DE241E20F600E1E2AF /* InputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModel.swift; sourceTree = "<group>"; };
+		5AFD66E0241E210100E1E2AF /* OutputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModel.swift; sourceTree = "<group>"; };
+		5AFD66E3241E232C00E1E2AF /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		5AFD66E5241E25D000E1E2AF /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
+		5AFD66E8241E30E000E1E2AF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		FB08D799CAE8B283A1B95A36 /* Pods_RubyTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubyTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC8DC25241CC59400AE1493 /* InputViewController.swift */,
+				5AFD66DB241E1D3000E1E2AF /* InputViewModel.swift */,
 				5AC8DC27241CC59400AE1493 /* Input.storyboard */,
 			);
 			path = InputView;
@@ -95,12 +108,41 @@
 			children = (
 				5AC8DC21241CC59400AE1493 /* AppDelegate.swift */,
 				5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */,
-				5A410C2C241D478A004FF794 /* InputView */,
+				5AFD66E7241E2F3800E1E2AF /* Presentation */,
+				5AFD66DD241E20BD00E1E2AF /* Model */,
+				5AFD66E2241E22D500E1E2AF /* Data */,
 				5AC8DC2A241CC59500AE1493 /* Assets.xcassets */,
 				5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */,
 				5AC8DC2F241CC59500AE1493 /* Info.plist */,
 			);
 			path = RubyTranslator;
+			sourceTree = "<group>";
+		};
+		5AFD66DD241E20BD00E1E2AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD66DE241E20F600E1E2AF /* InputModel.swift */,
+				5AFD66E0241E210100E1E2AF /* OutputModel.swift */,
+				5AFD66E5241E25D000E1E2AF /* APIErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5AFD66E2241E22D500E1E2AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD66E3241E232C00E1E2AF /* APIResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5AFD66E7241E2F3800E1E2AF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5A410C2C241D478A004FF794 /* InputView */,
+				5AFD66E8241E30E000E1E2AF /* HUD.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		7ACCD50D28DB01EA104321BB /* Pods */ = {
@@ -228,9 +270,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFD66E4241E232C00E1E2AF /* APIResponse.swift in Sources */,
 				5AC8DC26241CC59400AE1493 /* InputViewController.swift in Sources */,
+				5AFD66DF241E20F600E1E2AF /* InputModel.swift in Sources */,
+				5AFD66E6241E25D000E1E2AF /* APIErrorModel.swift in Sources */,
+				5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */,
+				5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */,
 				5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */,
 				5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */,
+				5AFD66DC241E1D3000E1E2AF /* InputViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

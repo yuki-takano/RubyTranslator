@@ -16,19 +16,19 @@ class InputViewController: UIInputViewController {
     @IBOutlet private weak var translateButton: UIButton!
     @IBOutlet private weak var textViewHeightConstraint: NSLayoutConstraint!
     
+    private let viewModel = InputViewModel()
     private let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        
+        setupView()
+        bindViewModelInput()
+        bindViewModelOutput()
     }
     
-    private func bind() {
-        textView.rx.didEndEditing.bind { [weak self] _ in
-            // TODO: viewModelにバインド
-            
-        }.disposed(by: bag)
-       
+    private func setupView() {
+
         textView.rx.didChange.bind { [weak self] _ in
             guard let self = self else { return }
             let height = self.textView.sizeThatFits(CGSize(width: self.textView.frame.width, height: CGFloat.greatestFiniteMagnitude)).height
@@ -39,6 +39,34 @@ class InputViewController: UIInputViewController {
         }.disposed(by: bag)
     }
     
+    private func bindViewModelInput() {
+        translateButton.rx.tap.bind { [weak self] _ in
+            guard let self = self else { return }
+            self.viewModel.getRubyText(self.textView.text)
+        }.disposed(by: bag)
+    }
+    
+    private func bindViewModelOutput() {
+        viewModel.rubyRelay.bind { [weak self] ruby in
+            
+        }.disposed(by: bag)
+        
+        viewModel.isLoading.bind { isLoading in
+            if isLoading {
+                HUD.show()
+            } else {
+                HUD.dismiss()
+            }
+        }.disposed(by: bag)
+        
+        viewModel.error.bind { e in
+            if let error = e?.message {
+                HUD.showError(error)
+            }
+        }.disposed(by: bag)
+        
+    }
+
 }
 
 extension InputViewController: UITextViewDelegate {
