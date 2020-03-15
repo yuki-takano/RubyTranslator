@@ -24,13 +24,15 @@ class InputViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        setTextView()
         setCreditImageView()
         bindViewModelInput()
         bindViewModelOutput()
     }
     
-    private func setupView() {
+    private func setTextView() {
+        setTextViewButton()
+        
         textView.rx.didChange.bind { [weak self] _ in
             guard let self = self else { return }
             let height = self.textView.sizeThatFits(CGSize(width: self.textView.frame.width, height: CGFloat.greatestFiniteMagnitude)).height
@@ -43,6 +45,25 @@ class InputViewController: UIInputViewController {
     
     private func setCreditImageView() {
         gooCreditImageView.kf.setImage(with: URL(string: Environment.gooCreditImageURLString))
+    }
+    
+    private func setTextViewButton() {
+        let screenWidth = UIScreen.main.bounds.width
+        let buttonWidth: CGFloat = 44.0
+        let mergin: CGFloat = 10.0
+        let accessoryView = UIView(frame: CGRect(x: screenWidth - buttonWidth - mergin, y: 0, width: 44, height: 44))
+        accessoryView.backgroundColor = .white
+        let closeButton = UIButton(frame: accessoryView.frame)
+        closeButton.setTitle("完了", for: .normal)
+        closeButton.setTitleColor(.blue, for: .normal)
+        closeButton.contentHorizontalAlignment = .right
+        closeButton.addTarget(self, action: #selector(onClickCloseButton), for: .touchUpInside)
+        accessoryView.addSubview(closeButton)
+        textView.inputAccessoryView = accessoryView
+    }
+    
+    @objc private func onClickCloseButton() {
+        textView.resignFirstResponder()
     }
     
     private func bindViewModelInput() {
