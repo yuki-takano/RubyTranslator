@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A36D7B7241E3FE300C12CC9 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D7B6241E3FE300C12CC9 /* Environment.swift */; };
 		5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC21241CC59400AE1493 /* AppDelegate.swift */; };
 		5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */; };
 		5AC8DC26241CC59400AE1493 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC25241CC59400AE1493 /* InputViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.debug.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.debug.xcconfig"; sourceTree = "<group>"; };
 		550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.release.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		5A36D7B6241E3FE300C12CC9 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		5AC8DC1E241CC59400AE1493 /* RubyTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC8DC21241CC59400AE1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				5AC8DC2A241CC59500AE1493 /* Assets.xcassets */,
 				5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */,
 				5AC8DC2F241CC59500AE1493 /* Info.plist */,
+				5A36D7B6241E3FE300C12CC9 /* Environment.swift */,
 			);
 			path = RubyTranslator;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */,
 				5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */,
 				5AFD66DC241E1D3000E1E2AF /* InputViewModel.swift in Sources */,
+				5A36D7B7241E3FE300C12CC9 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,14 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 
 class InputViewController: UIInputViewController {
 
     @IBOutlet private weak var textView: UITextView!
     @IBOutlet private weak var translateButton: UIButton!
     @IBOutlet private weak var textViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var gooCreditImageView: UIImageView!
     
     private let viewModel = InputViewModel()
     private let bag = DisposeBag()
@@ -23,12 +25,12 @@ class InputViewController: UIInputViewController {
         super.viewDidLoad()
         
         setupView()
+        setCreditImageView()
         bindViewModelInput()
         bindViewModelOutput()
     }
     
     private func setupView() {
-
         textView.rx.didChange.bind { [weak self] _ in
             guard let self = self else { return }
             let height = self.textView.sizeThatFits(CGSize(width: self.textView.frame.width, height: CGFloat.greatestFiniteMagnitude)).height
@@ -37,6 +39,10 @@ class InputViewController: UIInputViewController {
             frame.size.height = height
             self.textView.frame = frame
         }.disposed(by: bag)
+    }
+    
+    private func setCreditImageView() {
+        gooCreditImageView.kf.setImage(with: URL(string: Environment.gooCreditImageURLString))
     }
     
     private func bindViewModelInput() {
@@ -48,6 +54,7 @@ class InputViewController: UIInputViewController {
     
     private func bindViewModelOutput() {
         viewModel.rubyRelay.bind { [weak self] ruby in
+            guard let ruby = ruby else { return }
             
         }.disposed(by: bag)
         

@@ -72,20 +72,30 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="変換"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bxu-YW-xKd">
+                                <rect key="frame" x="87" y="812" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bd2-9F-a3F"/>
+                                    <constraint firstAttribute="height" constant="50" id="yGC-RR-SbU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ube-52-m5w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="2Do-Mx-0dL"/>
                             <constraint firstItem="YCy-Uy-3MA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ARF-lc-b60"/>
+                            <constraint firstItem="Bxu-YW-xKd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEN-kZ-GJm"/>
                             <constraint firstItem="YCy-Uy-3MA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="DPb-n2-MhN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ube-52-m5w" secondAttribute="trailing" constant="15" id="KNk-hh-znT"/>
                             <constraint firstItem="ube-52-m5w" firstAttribute="leading" secondItem="YCy-Uy-3MA" secondAttribute="trailing" constant="35" id="WLN-6H-bxc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YCy-Uy-3MA" secondAttribute="trailing" constant="100" id="Yhj-5W-5yq"/>
+                            <constraint firstItem="Bxu-YW-xKd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fFi-cD-Gqf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="入力画面" id="cUA-hc-skM"/>
                     <connections>
+                        <outlet property="gooCreditImageView" destination="Bxu-YW-xKd" id="UTx-Wg-JdQ"/>
                         <outlet property="textView" destination="h3d-O7-6DJ" id="ZDc-yB-tgC"/>
                         <outlet property="textViewHeightConstraint" destination="qss-U0-UJh" id="pS8-uF-ENA"/>
                         <outlet property="translateButton" destination="ube-52-m5w" id="TWX-6b-hdZ"/>

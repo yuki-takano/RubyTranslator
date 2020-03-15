@@ -7,6 +7,7 @@ def install_pods
     pod 'RxCocoa', '~> 5'
     pod 'Alamofire', '~> 5.0'
     pod 'SVProgressHUD'
+    pod 'Kingfisher', '~> 5.0'
 end
 
 target 'RubyTranslator' do
