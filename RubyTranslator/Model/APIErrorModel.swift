@@ -12,3 +12,7 @@ struct APIErrorModel: Codable {
     let code: String
     let message: String
 }
+
+enum APIError: Error, LocalizedError {
+    case unknown
+}
