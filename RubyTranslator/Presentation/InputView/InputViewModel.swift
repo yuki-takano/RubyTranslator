@@ -12,7 +12,7 @@ import RxCocoa
 
 final class InputViewModel {
     let isLoading = BehaviorRelay<Bool>(value: false)
-    let error = BehaviorRelay<APIErrorModel?>(value: nil)
+    let errorString = BehaviorRelay<String?>(value: nil)
     let rubyRelay = BehaviorRelay<OutputModel?>(value: nil)
     let bag = DisposeBag()
     
@@ -20,11 +20,17 @@ final class InputViewModel {
     
     func getRubyText(_ text: String) {
         let request = RubyRequest(text: text)
-        APICliant.call(request, bag, onSuccess: { response in
-            print(response)
-            
-        }, onError: { error in
-            print(error)
+        APICliant.call(request, bag, onSuccess: { [weak self] response in
+            guard let ruby = response.ruby else {
+                if let error = response.error {
+                    self?.errorString.accept(error.message)
+                }
+                
+                return
+            }
+            self?.rubyRelay.accept(ruby)
+        }, onError: { [weak self] error in
+            self?.errorString.accept(error.localizedDescription)
         })
     }
     

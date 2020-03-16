@@ -87,9 +87,9 @@ class InputViewController: UIInputViewController {
             }
         }.disposed(by: bag)
         
-        viewModel.error.bind { e in
-            if let error = e?.message {
-                HUD.showError(error)
+        viewModel.errorString.bind { errorStr in
+            if let e = errorStr {
+                HUD.showError(e)
             }
         }.disposed(by: bag)
         
