@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="26R-Wu-LxT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--出力画面-->
+        <scene sceneID="8Xe-FW-Pdx">
+            <objects>
+                <viewController storyboardIdentifier="OutputViewController" id="ic8-EZ-6oV" customClass="OutputViewController" customModule="RubyTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uag-9R-B3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-7C-57z" userLabel="Base Stack View">
+                                <rect key="frame" x="30" y="104" width="315" height="274"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0q0-p7-tl0">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="127"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変換前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltG-Ya-eGt">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天天気" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-6e-9xq">
+                                                <rect key="frame" x="0.0" y="27" width="315" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="uVv-Sq-WVy"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cHP-yU-9vv">
+                                        <rect key="frame" x="0.0" y="147" width="315" height="127"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変換後" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29P-lG-RPj">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天天気" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-Uv-4XR">
+                                                <rect key="frame" x="0.0" y="27" width="315" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="nTM-Yv-8xa"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dtD-7C-57z" firstAttribute="top" secondItem="SRl-Q0-Foc" secondAttribute="top" constant="60" id="9GH-mB-Xiu"/>
+                            <constraint firstItem="SRl-Q0-Foc" firstAttribute="trailing" secondItem="dtD-7C-57z" secondAttribute="trailing" constant="30" id="P12-jh-Rzg"/>
+                            <constraint firstItem="dtD-7C-57z" firstAttribute="leading" secondItem="SRl-Q0-Foc" secondAttribute="leading" constant="30" id="x3Q-l1-AqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SRl-Q0-Foc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="出力画面" id="X1g-oB-y7i"/>
+                    <connections>
+                        <outlet property="afterTextView" destination="7j9-Uv-4XR" id="PdO-1o-iHh"/>
+                        <outlet property="afterTextViewHeightConstraint" destination="nTM-Yv-8xa" id="3Qe-OL-bFg"/>
+                        <outlet property="beforeTextView" destination="eP4-6e-9xq" id="0oQ-Jv-Xat"/>
+                        <outlet property="beforeTextViewHeightConstraint" destination="uVv-Sq-WVy" id="p37-Oq-xYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf2-3W-shr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="-12.143928035982009"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vlP-Vy-b3T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="26R-Wu-LxT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bEc-ZM-hxK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ic8-EZ-6oV" kind="relationship" relationship="rootViewController" id="IOY-f9-JoL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdV-fG-pQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="-11.383928571428571"/>
+        </scene>
+    </scenes>
+</document>

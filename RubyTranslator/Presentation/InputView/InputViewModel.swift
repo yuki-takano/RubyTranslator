@@ -19,6 +19,7 @@ final class InputViewModel {
     init() {}
     
     func getRubyText(_ text: String) {
+        isLoading.accept(true)
         let request = RubyRequest(text: text)
         APICliant.call(request, bag, onSuccess: { [weak self] response in
             guard let ruby = response.ruby else {
@@ -26,11 +27,15 @@ final class InputViewModel {
                     self?.errorString.accept(error.message)
                 }
                 
+                self?.isLoading.accept(false)
                 return
             }
+            
+            self?.isLoading.accept(false)
             self?.rubyRelay.accept(ruby)
         }, onError: { [weak self] error in
             self?.errorString.accept(error.localizedDescription)
+            self?.isLoading.accept(false)
         })
     }
     

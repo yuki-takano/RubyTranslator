@@ -11,12 +11,12 @@ import RxSwift
 import RxCocoa
 import Kingfisher
 
-class InputViewController: UIInputViewController {
+class InputViewController: UIViewController {
 
     @IBOutlet private weak var textView: UITextView!
     @IBOutlet private weak var translateButton: UIButton!
     @IBOutlet private weak var textViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var gooCreditImageView: UIImageView!
+    @IBOutlet private weak var gooCreditImageView: UIImageView!
     
     private let viewModel = InputViewModel()
     private let bag = DisposeBag()
@@ -76,7 +76,11 @@ class InputViewController: UIInputViewController {
     private func bindViewModelOutput() {
         viewModel.rubyRelay.bind { [weak self] ruby in
             guard let ruby = ruby else { return }
-            
+            let storybord = UIStoryboard(name: "Output", bundle: nil)
+            let outputVC = storybord.instantiateViewController(identifier: "OutputViewController") as! OutputViewController
+            outputVC.beforeText = self?.textView.text
+            outputVC.afterText = ruby.converted
+            self?.navigationController?.pushViewController(outputVC, animated: true)
         }.disposed(by: bag)
         
         viewModel.isLoading.bind { isLoading in
@@ -92,7 +96,6 @@ class InputViewController: UIInputViewController {
                 HUD.showError(e)
             }
         }.disposed(by: bag)
-        
     }
 
 }

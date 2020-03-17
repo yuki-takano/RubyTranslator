@@ -12,6 +12,8 @@
 		5A1FD718241E972A001BE5C1 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD717241E972A001BE5C1 /* APIResult.swift */; };
 		5A1FD71A241E9770001BE5C1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD719241E9770001BE5C1 /* APIClient.swift */; };
 		5A36D7B7241E3FE300C12CC9 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D7B6241E3FE300C12CC9 /* Environment.swift */; };
+		5AAE8F34241F180600863028 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE8F33241F180600863028 /* OutputViewController.swift */; };
+		5AAE8F38241F190900863028 /* Output.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAE8F37241F190900863028 /* Output.storyboard */; };
 		5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC21241CC59400AE1493 /* AppDelegate.swift */; };
 		5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */; };
 		5AC8DC26241CC59400AE1493 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DC25241CC59400AE1493 /* InputViewController.swift */; };
@@ -48,6 +50,8 @@
 		5A1FD717241E972A001BE5C1 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		5A1FD719241E9770001BE5C1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5A36D7B6241E3FE300C12CC9 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		5AAE8F33241F180600863028 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		5AAE8F37241F190900863028 /* Output.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Output.storyboard; sourceTree = "<group>"; };
 		5AC8DC1E241CC59400AE1493 /* RubyTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC8DC21241CC59400AE1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AC8DC23241CC59400AE1493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 				5AC8DC27241CC59400AE1493 /* Input.storyboard */,
 			);
 			path = InputView;
+			sourceTree = "<group>";
+		};
+		5AAE8F32241F17E900863028 /* OutputView */ = {
+			isa = PBXGroup;
+			children = (
+				5AAE8F33241F180600863028 /* OutputViewController.swift */,
+				5AAE8F37241F190900863028 /* Output.storyboard */,
+			);
+			path = OutputView;
 			sourceTree = "<group>";
 		};
 		5AC8DC15241CC59400AE1493 = {
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5A410C2C241D478A004FF794 /* InputView */,
+				5AAE8F32241F17E900863028 /* OutputView */,
 				5AFD66E8241E30E000E1E2AF /* HUD.swift */,
 			);
 			path = Presentation;
@@ -230,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAE8F38241F190900863028 /* Output.storyboard in Resources */,
 				5AC8DC2E241CC59500AE1493 /* LaunchScreen.storyboard in Resources */,
 				5AC8DC2B241CC59500AE1493 /* Assets.xcassets in Resources */,
 				5AC8DC29241CC59400AE1493 /* Input.storyboard in Resources */,
@@ -295,6 +310,7 @@
 				5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */,
 				5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */,
 				5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */,
+				5AAE8F34241F180600863028 /* OutputViewController.swift in Sources */,
 				5AC8DC24241CC59400AE1493 /* SceneDelegate.swift in Sources */,
 				5AFD66DC241E1D3000E1E2AF /* InputViewModel.swift in Sources */,
 				5A1FD716241E93A2001BE5C1 /* APIRequest.swift in Sources */,
