@@ -74,6 +74,12 @@ class InputViewController: UIViewController {
     private func bindViewModelInput() {
         translateButton.rx.tap.bind { [weak self] _ in
             guard let self = self else { return }
+            
+            if self.textView.text.count == 0 {
+                HUD.showError("文字列を入力して下さい")
+                return
+            }
+            
             self.viewModel.getRubyText(self.textView.text)
         }.disposed(by: bag)
     }

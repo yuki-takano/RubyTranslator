@@ -24,10 +24,11 @@ struct HUD {
     }
     
     static func dismiss() {
-        SVProgressHUD.dismiss()
+        SVProgressHUD.dismiss(withDelay: 3)
     }
     
     static func showError(_ text: String) {
         SVProgressHUD.showError(withStatus: text)
+        SVProgressHUD.dismiss(withDelay: 3)
     }
 }
