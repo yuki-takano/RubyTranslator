@@ -20,9 +20,14 @@ final class OutputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setTextView()
     }
-
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
     
     private func setTextView() {
         beforeTextView.layer.cornerRadius = 5.0

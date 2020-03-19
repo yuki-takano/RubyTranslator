@@ -23,11 +23,16 @@ class InputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavigationBar()
         setTextView()
         setCreditImageView()
         bindViewModelInput()
         bindViewModelOutput()
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     private func setTextView() {
