@@ -13,7 +13,7 @@ import Kingfisher
 
 class InputViewController: UIViewController {
 
-    @IBOutlet private weak var textView: UITextView!
+    @IBOutlet private weak var textView: PlaceHolderTextView!
     @IBOutlet private weak var translateButton: UIButton!
     @IBOutlet private weak var textViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var gooCreditImageView: UIImageView!

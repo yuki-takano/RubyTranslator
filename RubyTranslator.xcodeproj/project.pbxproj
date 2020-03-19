@@ -20,6 +20,7 @@
 		5AC8DC29241CC59400AE1493 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC27241CC59400AE1493 /* Input.storyboard */; };
 		5AC8DC2B241CC59500AE1493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2A241CC59500AE1493 /* Assets.xcassets */; };
 		5AC8DC2E241CC59500AE1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */; };
+		5AFC2EF12423EF4500586C70 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC2EF02423EF4500586C70 /* PlaceHolderTextView.swift */; };
 		5AFD66DC241E1D3000E1E2AF /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66DB241E1D3000E1E2AF /* InputViewModel.swift */; };
 		5AFD66DF241E20F600E1E2AF /* InputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66DE241E20F600E1E2AF /* InputModel.swift */; };
 		5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD66E0241E210100E1E2AF /* OutputModel.swift */; };
@@ -60,6 +61,7 @@
 		5AC8DC2A241CC59500AE1493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC8DC2D241CC59500AE1493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC8DC2F241CC59500AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFC2EF02423EF4500586C70 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		5AFD66DB241E1D3000E1E2AF /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
 		5AFD66DE241E20F600E1E2AF /* InputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputModel.swift; sourceTree = "<group>"; };
 		5AFD66E0241E210100E1E2AF /* OutputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputModel.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				5A410C2C241D478A004FF794 /* InputView */,
 				5AAE8F32241F17E900863028 /* OutputView */,
 				5AFD66E8241E30E000E1E2AF /* HUD.swift */,
+				5AFC2EF02423EF4500586C70 /* PlaceHolderTextView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				5A1FD718241E972A001BE5C1 /* APIResult.swift in Sources */,
 				5AFD66E6241E25D000E1E2AF /* APIErrorModel.swift in Sources */,
 				5A1FD714241E85F7001BE5C1 /* BaseRequestProtocol.swift in Sources */,
+				5AFC2EF12423EF4500586C70 /* PlaceHolderTextView.swift in Sources */,
 				5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */,
 				5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */,
 				5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */,
