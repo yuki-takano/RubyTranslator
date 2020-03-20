@@ -10,6 +10,15 @@ def install_pods
     pod 'Kingfisher', '~> 5.0'
 end
 
+def install_unit_test_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
+
 target 'RubyTranslator' do
     install_pods
+end
+
+target 'RubyTranslatorTests' do
+    install_unit_test_pods
 end

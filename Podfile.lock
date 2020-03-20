@@ -3,6 +3,8 @@ PODS:
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
+  - Nimble (8.0.5)
+  - Quick (2.2.0)
   - RxCocoa (5.1.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -14,6 +16,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0)
   - Kingfisher (~> 5.0)
+  - Nimble
+  - Quick
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SVProgressHUD
@@ -22,6 +26,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - Nimble
+    - Quick
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -30,11 +36,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
   RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c2788066c298224fdf16dfb239fc779c1ff613d6
+PODFILE CHECKSUM: 437cb2ddf5b8b7f391c96b50b0023aa4d8275ff4
 
 COCOAPODS: 1.8.4
