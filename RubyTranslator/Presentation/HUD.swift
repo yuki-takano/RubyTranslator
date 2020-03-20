@@ -24,7 +24,7 @@ struct HUD {
     }
     
     static func dismiss() {
-        SVProgressHUD.dismiss(withDelay: 3)
+        SVProgressHUD.dismiss()
     }
     
     static func showError(_ text: String) {
