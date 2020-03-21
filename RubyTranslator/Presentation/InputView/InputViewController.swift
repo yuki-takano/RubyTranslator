@@ -90,7 +90,7 @@ class InputViewController: UIViewController {
             let storybord = UIStoryboard(name: "Output", bundle: nil)
             let outputVC = storybord.instantiateViewController(identifier: "OutputViewController") as! OutputViewController
             outputVC.beforeText = self?.textView.text
-            outputVC.afterText = ruby.converted
+            outputVC.afterText = ruby.rubyText
             self?.navigationController?.pushViewController(outputVC, animated: true)
         }.disposed(by: bag)
         

@@ -22,7 +22,7 @@ class ApiTests: QuickSpec {
                     var response: RubyResponse!
                     expect { response = try self.decoder.decode(RubyResponse.self, from: responseJsonData) }.toNot(throwError())
                     expect(response.ruby).toNot(beNil())
-                    expect(response.ruby?.converted).to(equal("かんじが まざっている ぶんしょう"))
+                    expect(response.ruby?.rubyText).to(equal("かんじがまざっているぶんしょう"))
                     expect(response.ruby?.outputType).to(equal("hiragana"))
                 }
             }

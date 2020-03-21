@@ -12,6 +12,10 @@ struct OutputModel: Codable {
     let requestId: String
     let outputType: String
     let converted: String
+    // convertedは単語間に半角スペースが入っているため、スペースを覗いた文字列を表示に使う
+    var rubyText: String {
+        converted.replacingOccurrences(of: " ", with: "")
+    }
     
     enum CodingKeys: String, CodingKey {
         case requestId = "request_id"
