@@ -8,6 +8,7 @@
 
 import Foundation
 
+// 【gooのレスポンス構造】https://labs.goo.ne.jp/api_error_info/
 struct APIErrorModel: Codable {
     let code: Int
     let message: String

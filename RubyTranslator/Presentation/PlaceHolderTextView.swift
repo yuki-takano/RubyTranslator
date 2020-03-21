@@ -42,9 +42,5 @@ import UIKit
     @objc private func textChanged(notification: NSNotification?) {
         changePlaceHolderAlpha()
     }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
 
 }
