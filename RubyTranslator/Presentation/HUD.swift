@@ -11,6 +11,7 @@ import SVProgressHUD
 
 struct HUD {
     private init() {}
+    static let delay: TimeInterval = 3
     
     static func setDefaultSettings() {
         SVProgressHUD.setRingThickness(2)
@@ -29,6 +30,6 @@ struct HUD {
     
     static func showError(_ text: String) {
         SVProgressHUD.showError(withStatus: text)
-        SVProgressHUD.dismiss(withDelay: 3)
+        SVProgressHUD.dismiss(withDelay: delay)
     }
 }
