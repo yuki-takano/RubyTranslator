@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Kingfisher
+import Rswift
 
 class InputViewController: UIViewController {
 
@@ -59,7 +60,7 @@ class InputViewController: UIViewController {
         let accessoryView = UIView(frame: CGRect(x: screenWidth - buttonWidth - mergin, y: 0, width: 44, height: 44))
         accessoryView.backgroundColor = .white
         let closeButton = UIButton(frame: accessoryView.frame)
-        closeButton.setTitle("完了", for: .normal)
+        closeButton.setTitle(R.string.localizable.keybordHideTitle(), for: .normal)
         closeButton.setTitleColor(.blue, for: .normal)
         closeButton.contentHorizontalAlignment = .right
         closeButton.addTarget(self, action: #selector(onClickCloseButton), for: .touchUpInside)
@@ -76,7 +77,7 @@ class InputViewController: UIViewController {
             guard let self = self else { return }
             
             if self.textView.text.count == 0 {
-                HUD.showError("文字列を入力して下さい")
+                HUD.showError(R.string.localizable.textEmptyErrorWord())
                 return
             }
             
@@ -87,8 +88,7 @@ class InputViewController: UIViewController {
     private func bindViewModelOutput() {
         viewModel.rubyRelay.bind { [weak self] ruby in
             guard let ruby = ruby else { return }
-            let storybord = UIStoryboard(name: "Output", bundle: nil)
-            let outputVC = storybord.instantiateViewController(identifier: "OutputViewController") as! OutputViewController
+            let outputVC = R.storyboard.output.outputViewController()!
             outputVC.beforeText = self?.textView.text
             outputVC.afterText = ruby.rubyText
             self?.navigationController?.pushViewController(outputVC, animated: true)

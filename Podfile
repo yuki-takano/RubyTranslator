@@ -8,6 +8,7 @@ def install_pods
     pod 'Alamofire', '~> 5.0'
     pod 'SVProgressHUD'
     pod 'Kingfisher', '~> 5.0'
+    pod 'R.swift'
 end
 
 def install_unit_test_pods

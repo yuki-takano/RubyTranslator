@@ -13,6 +13,8 @@
 		5A1FD71A241E9770001BE5C1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD719241E9770001BE5C1 /* APIClient.swift */; };
 		5A36D7B7241E3FE300C12CC9 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D7B6241E3FE300C12CC9 /* Environment.swift */; };
 		5A6EBCC6242513EA00095054 /* RubyTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBCC5242513EA00095054 /* RubyTranslatorTests.swift */; };
+		5A849AD5242680B700D78E28 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A849AD4242680B700D78E28 /* R.generated.swift */; };
+		5A849AD72426847300D78E28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A849AD62426847300D78E28 /* Localizable.strings */; };
 		5A9C33DB242517FB007A05D2 /* TestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C33DA242517FB007A05D2 /* TestUtil.swift */; };
 		5A9C33DE2425185F007A05D2 /* Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9C33DD2425185F007A05D2 /* Normal.json */; };
 		5A9C33E02425188C007A05D2 /* Error.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9C33DF2425188C007A05D2 /* Error.json */; };
@@ -71,6 +73,8 @@
 		5A6EBCC3242513EA00095054 /* RubyTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubyTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6EBCC5242513EA00095054 /* RubyTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyTranslatorTests.swift; sourceTree = "<group>"; };
 		5A6EBCC7242513EA00095054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A849AD4242680B700D78E28 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		5A849AD62426847300D78E28 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5A9C33DA242517FB007A05D2 /* TestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtil.swift; sourceTree = "<group>"; };
 		5A9C33DD2425185F007A05D2 /* Normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Normal.json; sourceTree = "<group>"; };
 		5A9C33DF2425188C007A05D2 /* Error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Error.json; sourceTree = "<group>"; };
@@ -148,6 +152,14 @@
 			path = RubyTranslatorTests;
 			sourceTree = "<group>";
 		};
+		5A849AD82426847C00D78E28 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5A849AD62426847300D78E28 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		5A9C33D72425179D007A05D2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 		5AC8DC15241CC59400AE1493 = {
 			isa = PBXGroup;
 			children = (
+				5A849AD4242680B700D78E28 /* R.generated.swift */,
 				5AC8DC20241CC59400AE1493 /* RubyTranslator */,
 				5A6EBCC4242513EA00095054 /* RubyTranslatorTests */,
 				5AC8DC1F241CC59400AE1493 /* Products */,
@@ -210,6 +223,7 @@
 				5AFD66E7241E2F3800E1E2AF /* Presentation */,
 				5AFD66DD241E20BD00E1E2AF /* Model */,
 				5AFD66E2241E22D500E1E2AF /* Networking */,
+				5A849AD82426847C00D78E28 /* Resource */,
 				5AC8DC2A241CC59500AE1493 /* Assets.xcassets */,
 				5AC8DC2C241CC59500AE1493 /* LaunchScreen.storyboard */,
 				5AC8DC2F241CC59500AE1493 /* Info.plist */,
@@ -290,6 +304,7 @@
 			buildConfigurationList = 5AC8DC32241CC59500AE1493 /* Build configuration list for PBXNativeTarget "RubyTranslator" */;
 			buildPhases = (
 				05F1578743C94410426F9094 /* [CP] Check Pods Manifest.lock */,
+				5A849AD32426803300D78E28 /* ShellScript */,
 				5AC8DC1A241CC59400AE1493 /* Sources */,
 				5AC8DC1B241CC59400AE1493 /* Frameworks */,
 				5AC8DC1C241CC59400AE1493 /* Resources */,
@@ -357,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A849AD72426847300D78E28 /* Localizable.strings in Resources */,
 				5AAE8F38241F190900863028 /* Output.storyboard in Resources */,
 				5AC8DC2E241CC59500AE1493 /* LaunchScreen.storyboard in Resources */,
 				5AC8DC2B241CC59500AE1493 /* Assets.xcassets in Resources */,
@@ -388,6 +404,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5A849AD32426803300D78E28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		62C3BFACBB05DD87FA8D3809 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -470,6 +505,7 @@
 				5AFD66E6241E25D000E1E2AF /* APIErrorModel.swift in Sources */,
 				5A1FD714241E85F7001BE5C1 /* BaseRequestProtocol.swift in Sources */,
 				5AFC2EF12423EF4500586C70 /* PlaceHolderTextView.swift in Sources */,
+				5A849AD5242680B700D78E28 /* R.generated.swift in Sources */,
 				5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */,
 				5AFD66E1241E210100E1E2AF /* OutputModel.swift in Sources */,
 				5AC8DC22241CC59400AE1493 /* AppDelegate.swift in Sources */,
