@@ -8,6 +8,9 @@
 - Swift5.0
 - CocoaPods 1.8.4
 
+### 利用イメージ
+https://user-images.githubusercontent.com/6592495/77228257-62e51400-6bc9-11ea-9bc4-eb52053acb90.gif
+
 ### セットアップ
 
 1. `cd {path to this repository}`
