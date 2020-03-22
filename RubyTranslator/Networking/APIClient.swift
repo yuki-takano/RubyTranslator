@@ -16,7 +16,7 @@ struct APICliant {
     private static let contentType = ["application/json"]
 
     static func call<T, V>(_ request: T, _ disposeBag: DisposeBag, onSuccess: @escaping (V) -> Void, onError: @escaping (Error) -> Void)
-        where T: BaseRequestProtocol, V: Codable, T.ResponseType == V {
+        where T: APIRequestProtocol, V: Codable, T.ResponseType == V {
 
             _ = observe(request)
                 .observeOn(MainScheduler.instance)
@@ -26,7 +26,7 @@ struct APICliant {
     }
 
     static func observe<T, V>(_ request: T) -> Single<V>
-        where T: BaseRequestProtocol, V: Codable, T.ResponseType == V {
+        where T: APIRequestProtocol, V: Codable, T.ResponseType == V {
 
             return Single<V>.create { observer in
                 let calling = callForData(request) { response in
@@ -43,7 +43,7 @@ struct APICliant {
 
     // Alamofire呼び出し部分
     private static func callForData<T, V>(_ request: T, completion: @escaping (APIResult) -> Void) -> DataRequest
-        where T: BaseRequestProtocol, V: Codable, T.ResponseType == V {
+        where T: APIRequestProtocol, V: Codable, T.ResponseType == V {
             
             return APICliant.request(request).responseJSON { response in
                 guard let data = response.data else { return completion(.failure(APIError.unknown))}
@@ -59,7 +59,7 @@ struct APICliant {
 
     // Alamofireのメソッドのみ切り出した部分
     private static func request<T>(_ request: T) -> DataRequest
-        where T: BaseRequestProtocol {
+        where T: APIRequestProtocol {
             
             AF.request(request)
                .validate(statusCode: successRange)

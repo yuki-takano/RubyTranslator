@@ -1,5 +1,5 @@
 //
-//  BaseRequestProtocol.swift
+//  APIRequestProtocol.swift
 //  RubyTranslator
 //
 //  Created by takanoyuki on 2020/03/16.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-protocol BaseRequestProtocol: URLRequestConvertible {
+protocol APIRequestProtocol: URLRequestConvertible {
     associatedtype ResponseType
     
     var parameters: Parameters? { get }
@@ -19,7 +19,7 @@ protocol BaseRequestProtocol: URLRequestConvertible {
     var headers: HTTPHeaders? { get }
 }
 
-extension BaseRequestProtocol {
+extension APIRequestProtocol {
     var encoding: JSONEncoding {
         return JSONEncoding.default
     }

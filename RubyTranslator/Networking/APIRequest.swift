@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-final class RubyRequest: BaseRequestProtocol {
+final class RubyRequest: APIRequestProtocol {
     typealias ResponseType = RubyResponse
     
     var parameters: Parameters? {

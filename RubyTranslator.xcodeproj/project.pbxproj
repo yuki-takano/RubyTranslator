@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A1FD714241E85F7001BE5C1 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD713241E85F7001BE5C1 /* BaseRequestProtocol.swift */; };
+		5A1FD714241E85F7001BE5C1 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD713241E85F7001BE5C1 /* APIRequestProtocol.swift */; };
 		5A1FD716241E93A2001BE5C1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD715241E93A2001BE5C1 /* APIRequest.swift */; };
 		5A1FD718241E972A001BE5C1 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD717241E972A001BE5C1 /* APIResult.swift */; };
 		5A1FD71A241E9770001BE5C1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1FD719241E9770001BE5C1 /* APIClient.swift */; };
@@ -65,7 +65,7 @@
 		3747B1A66483C980459B39C6 /* Pods-RubyTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.debug.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.debug.xcconfig"; sourceTree = "<group>"; };
 		4B047314FEBBAA455DE7EA22 /* Pods_RubyTranslatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubyTranslatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		550D3689DBA98706F97C6761 /* Pods-RubyTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyTranslator.release.xcconfig"; path = "Target Support Files/Pods-RubyTranslator/Pods-RubyTranslator.release.xcconfig"; sourceTree = "<group>"; };
-		5A1FD713241E85F7001BE5C1 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
+		5A1FD713241E85F7001BE5C1 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
 		5A1FD715241E93A2001BE5C1 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		5A1FD717241E972A001BE5C1 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		5A1FD719241E9770001BE5C1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFD66E3241E232C00E1E2AF /* APIResponse.swift */,
-				5A1FD713241E85F7001BE5C1 /* BaseRequestProtocol.swift */,
+				5A1FD713241E85F7001BE5C1 /* APIRequestProtocol.swift */,
 				5A1FD715241E93A2001BE5C1 /* APIRequest.swift */,
 				5A1FD717241E972A001BE5C1 /* APIResult.swift */,
 				5A1FD719241E9770001BE5C1 /* APIClient.swift */,
@@ -503,7 +503,7 @@
 				5AFD66DF241E20F600E1E2AF /* InputModel.swift in Sources */,
 				5A1FD718241E972A001BE5C1 /* APIResult.swift in Sources */,
 				5AFD66E6241E25D000E1E2AF /* APIErrorModel.swift in Sources */,
-				5A1FD714241E85F7001BE5C1 /* BaseRequestProtocol.swift in Sources */,
+				5A1FD714241E85F7001BE5C1 /* APIRequestProtocol.swift in Sources */,
 				5AFC2EF12423EF4500586C70 /* PlaceHolderTextView.swift in Sources */,
 				5A849AD5242680B700D78E28 /* R.generated.swift in Sources */,
 				5AFD66E9241E30E000E1E2AF /* HUD.swift in Sources */,
