@@ -27,7 +27,7 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天天気" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-6e-9xq">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-6e-9xq">
                                                 <rect key="frame" x="0.0" y="27" width="315" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -48,7 +48,7 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天気今日はいい天天気" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-Uv-4XR">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-Uv-4XR">
                                                 <rect key="frame" x="0.0" y="27" width="315" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
